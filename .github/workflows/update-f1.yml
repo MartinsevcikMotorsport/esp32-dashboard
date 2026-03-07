@@ -3,7 +3,7 @@ name: Update F1 Data
 on:
   schedule:
     - cron: "*/5 * * * *"   # každých 5 minut
-  workflow_dispatch:        # možnost spustit ručně
+  workflow_dispatch:
 
 jobs:
   update:
@@ -20,6 +20,9 @@ jobs:
 
       - name: Install FastF1
         run: pip install fastf1
+
+      - name: Create cache folder
+        run: mkdir cache
 
       - name: Generate F1 JSON
         run: |
@@ -56,4 +59,3 @@ jobs:
           git add f1.json
           git commit -m "Auto-update F1 data" || echo "No changes"
           git push
-
