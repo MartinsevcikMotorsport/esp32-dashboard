@@ -1,30 +1,45 @@
 {
-  "session": "Qualifying",
-  "results": [
+  "current_session": "Qualifying",
+  "drivers": [
     {
-      "name": "Max Verstappen",
-      "team": "Red Bull Racing",
-      "time": "0 days 00:01:29.179000"
+      "name": "Unknown",
+      "team": "Williams",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
     },
     {
-      "name": "Charles Leclerc",
-      "team": "Ferrari",
-      "time": "0 days 00:01:29.165000"
+      "name": "Unknown",
+      "team": "Haas F1 Team",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
     },
     {
-      "name": "George Russell",
-      "team": "Mercedes",
-      "time": "0 days 00:01:29.485000"
+      "name": "Unknown",
+      "team": "Racing Bulls",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
     },
     {
-      "name": "Carlos Sainz",
-      "team": "Ferrari",
-      "time": "0 days 00:01:29.507000"
+      "name": "Unknown",
+      "team": "McLaren",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
     },
     {
-      "name": "Sergio Perez",
-      "team": "Red Bull Racing",
-      "time": "0 days 00:01:29.537000"
+      "name": "Unknown",
+      "team": "Audi",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
     }
   ]
 }
