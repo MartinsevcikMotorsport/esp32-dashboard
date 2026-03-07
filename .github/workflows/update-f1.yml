@@ -2,8 +2,8 @@ name: Update F1 Data
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # každých 5 minut
-  workflow_dispatch:        # možnost spustit ručně
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
 
 jobs:
   update:
@@ -32,21 +32,21 @@ jobs:
 
           fastf1.Cache.enable_cache('cache')
 
-          # Vybereme session (2024 Bahrain Qualifying)
           session = fastf1.get_session(2024, 'Bahrain', 'Q')
           session.load()
 
           results = []
 
-          # vezmeme prvních 5 jezdců podle pořadí
-          for drv_id in session.drivers[:5]:
+          # FastF1 poskytuje metadata jezdců přes session.get_driver()
+          for drv_id in session.results['DriverNumber'][:5]:
               drv = session.get_driver(drv_id)
+
               laps = session.laps.pick_driver(drv_id)
               best = laps.pick_fastest()
 
               results.append({
-                  "name": drv['full_name'],
-                  "team": drv['team_name'],
+                  "name": drv['FullName'],
+                  "team": drv['TeamName'],
                   "time": str(best['LapTime']) if best is not None else "N/A"
               })
 
