@@ -18,45 +18,83 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install FastF1
-        run: pip install fastf1
-
-      - name: Create cache folder
-        run: mkdir cache
+      - name: Install requests
+        run: pip install requests
 
       - name: Generate F1 JSON
         run: |
           python3 << 'EOF'
-          import fastf1
+          import requests
           import json
 
-          fastf1.Cache.enable_cache('cache')
+          # --- 1) Získání aktuální session ---
+          session_info = requests.get(
+              "https://api.openf1.org/v1/sessions?session_key=latest"
+          ).json()
 
-          session = fastf1.get_session(2024, 'Bahrain', 'Q')
-          session.load()
+          current_session = session_info[0]["session_name"]
+          current_gp_key = session_info[0]["session_key"]
 
+          # --- 2) Pořadí jezdců (TOP 5) ---
+          positions = requests.get(
+              f"https://api.openf1.org/v1/position?session_key={current_gp_key}"
+          ).json()
+
+          top5 = sorted(positions, key=lambda x: x["position"])[:5]
+
+          # --- 3) Metadata jezdců ---
+          drivers_meta = requests.get(
+              f"https://api.openf1.org/v1/drivers?session_key={current_gp_key}"
+          ).json()
+
+          # Převod na dict podle driver_number
+          meta_by_number = {d["driver_number"]: d for d in drivers_meta}
+
+          # --- 4) Funkce pro získání nejlepšího času ---
+          def best_time(session_name, driver_number):
+              laps = requests.get(
+                  f"https://api.openf1.org/v1/laps?session_key={session_name}&driver_number={driver_number}"
+              ).json()
+
+              if not laps:
+                  return "N/A"
+
+              # Najdeme nejrychlejší kolo
+              best = min(
+                  (lap for lap in laps if lap.get("lap_time")),
+                  key=lambda x: x["lap_time"],
+                  default=None
+              )
+
+              if best is None:
+                  return "N/A"
+
+              return best["lap_time"]
+
+          # --- 5) Sestavení výsledného JSONu ---
           results = []
 
-          # FastF1 poskytuje metadata jezdců přes session.get_driver()
-          for drv_id in session.results['DriverNumber'][:5]:
-              drv = session.get_driver(drv_id)
-
-              laps = session.laps.pick_driver(drv_id)
-              best = laps.pick_fastest()
+          for entry in top5:
+              num = entry["driver_number"]
+              meta = meta_by_number.get(num, {})
 
               results.append({
-                  "name": drv['FullName'],
-                  "team": drv['TeamName'],
-                  "time": str(best['LapTime']) if best is not None else "N/A"
+                  "name": meta.get("driver_name", "Unknown"),
+                  "team": meta.get("team_name", "Unknown"),
+                  "position": entry["position"],
+                  "fp1": best_time("FP1", num),
+                  "fp2": best_time("FP2", num),
+                  "qualifying": best_time("Q", num)
               })
 
           data = {
-              "session": "Qualifying",
-              "results": results
+              "current_session": current_session,
+              "drivers": results
           }
 
           with open("f1.json", "w") as f:
               json.dump(data, f, indent=2)
+
           EOF
 
       - name: Commit changes
