@@ -1,10 +1,30 @@
 {
-  "session": "FP2",
+  "session": "Qualifying",
   "results": [
-    { "name": "Martin Sevcik", "team": "McLaren", "time": "1:19.729" },
-    { "name": "Kimi Antonelli", "team": "Mercedes", "time": "+0.214s" },
-    { "name": "George Russell", "team": "Mercedes", "time": "+0.320s" },
-    { "name": "Lewis Hamilton", "team": "Ferrari", "time": "+0.321s" },
-    { "name": "Charles Leclerc", "team": "Ferrari", "time": "+0.562s" }
+    {
+      "name": "Max Verstappen",
+      "team": "Red Bull Racing",
+      "time": "0 days 00:01:29.179000"
+    },
+    {
+      "name": "Charles Leclerc",
+      "team": "Ferrari",
+      "time": "0 days 00:01:29.165000"
+    },
+    {
+      "name": "George Russell",
+      "team": "Mercedes",
+      "time": "0 days 00:01:29.485000"
+    },
+    {
+      "name": "Carlos Sainz",
+      "team": "Ferrari",
+      "time": "0 days 00:01:29.507000"
+    },
+    {
+      "name": "Sergio Perez",
+      "team": "Red Bull Racing",
+      "time": "0 days 00:01:29.537000"
+    }
   ]
 }
