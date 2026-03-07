@@ -1,1 +1,59 @@
+name: Update F1 Data
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # každých 5 minut
+  workflow_dispatch:        # možnost spustit ručně
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install FastF1
+        run: pip install fastf1
+
+      - name: Generate F1 JSON
+        run: |
+          python3 << 'EOF'
+          import fastf1
+          import json
+
+          fastf1.Cache.enable_cache('cache')
+
+          session = fastf1.get_session(2024, 'Bahrain', 'Q')
+          session.load()
+
+          results = []
+          for driver in session.results[:5]:
+              results.append({
+                  "name": driver.full_name,
+                  "team": driver.team_name,
+                  "time": str(driver.best_lap_time)
+              })
+
+          data = {
+              "session": "Qualifying",
+              "results": results
+          }
+
+          with open("f1.json", "w") as f:
+              json.dump(data, f, indent=2)
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add f1.json
+          git commit -m "Auto-update F1 data" || echo "No changes"
+          git push
 
