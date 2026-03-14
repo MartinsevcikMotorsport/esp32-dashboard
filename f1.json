@@ -1,5 +1,5 @@
 {
-  "current_session": "Sprint Qualifying",
+  "current_session": "Sprint",
   "drivers": [
     {
       "name": "Unknown",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Unknown",
-      "team": "Red Bull Racing",
+      "team": "Ferrari",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Unknown",
-      "team": "Ferrari",
+      "team": "Mercedes",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
