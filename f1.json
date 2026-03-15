@@ -1,9 +1,9 @@
 {
-  "current_session": "Qualifying",
+  "current_session": "Race",
   "drivers": [
     {
       "name": "Unknown",
-      "team": "Cadillac",
+      "team": "Mercedes",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Unknown",
-      "team": "Alpine",
+      "team": "Ferrari",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -19,7 +19,7 @@
     },
     {
       "name": "Unknown",
-      "team": "Racing Bulls",
+      "team": "Mercedes",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -27,16 +27,16 @@
     },
     {
       "name": "Unknown",
-      "team": "Red Bull Racing",
-      "position": 1,
+      "team": "Mercedes",
+      "position": 2,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
     },
     {
       "name": "Unknown",
-      "team": "Red Bull Racing",
-      "position": 1,
+      "team": "Mercedes",
+      "position": 2,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
