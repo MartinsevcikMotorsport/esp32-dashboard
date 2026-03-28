@@ -1,41 +1,41 @@
 {
-  "current_session": "Practice 3",
+  "current_session": "Qualifying",
   "drivers": [
     {
       "name": "Unknown",
+      "team": "Mercedes",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
+      "team": "Racing Bulls",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
+      "team": "Racing Bulls",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
+      "team": "Haas F1 Team",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
       "team": "McLaren",
-      "position": 1,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "Alpine",
-      "position": 1,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "Alpine",
-      "position": 1,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "Ferrari",
-      "position": 1,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "Alpine",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
