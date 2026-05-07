@@ -3,6 +3,14 @@
   "drivers": [
     {
       "name": "Unknown",
+      "team": "Mercedes",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
       "team": "Ferrari",
       "position": 1,
       "fp1": "N/A",
@@ -20,14 +28,6 @@
     {
       "name": "Unknown",
       "team": "Ferrari",
-      "position": 1,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "McLaren",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
