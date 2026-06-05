@@ -1,14 +1,6 @@
 {
-  "current_session": "Race",
+  "current_session": "Practice 1",
   "drivers": [
-    {
-      "name": "Unknown",
-      "team": "Mercedes",
-      "position": 1,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
     {
       "name": "Unknown",
       "team": "McLaren",
@@ -19,7 +11,7 @@
     },
     {
       "name": "Unknown",
-      "team": "Mercedes",
+      "team": "Cadillac",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -27,7 +19,7 @@
     },
     {
       "name": "Unknown",
-      "team": "Mercedes",
+      "team": "Red Bull Racing",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -35,7 +27,15 @@
     },
     {
       "name": "Unknown",
-      "team": "Mercedes",
+      "team": "Ferrari",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
+      "team": "Red Bull Racing",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
