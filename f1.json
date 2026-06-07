@@ -1,5 +1,5 @@
 {
-  "current_session": "Qualifying",
+  "current_session": "Race",
   "drivers": [
     {
       "name": "Unknown",
@@ -11,32 +11,32 @@
     },
     {
       "name": "Unknown",
-      "team": "Cadillac",
-      "position": 1,
+      "team": "Red Bull Racing",
+      "position": 2,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
     },
     {
       "name": "Unknown",
-      "team": "Haas F1 Team",
-      "position": 1,
+      "team": "Ferrari",
+      "position": 2,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
     },
     {
       "name": "Unknown",
-      "team": "Racing Bulls",
-      "position": 1,
+      "team": "Ferrari",
+      "position": 2,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
     },
     {
       "name": "Unknown",
-      "team": "McLaren",
-      "position": 1,
+      "team": "Ferrari",
+      "position": 2,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
