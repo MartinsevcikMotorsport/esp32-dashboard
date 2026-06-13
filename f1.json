@@ -1,9 +1,9 @@
 {
-  "current_session": "Practice 3",
+  "current_session": "Qualifying",
   "drivers": [
     {
       "name": "Unknown",
-      "team": "McLaren",
+      "team": "Mercedes",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -19,7 +19,15 @@
     },
     {
       "name": "Unknown",
-      "team": "Audi",
+      "team": "Haas F1 Team",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
+      "team": "Williams",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -28,14 +36,6 @@
     {
       "name": "Unknown",
       "team": "Audi",
-      "position": 1,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "McLaren",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
