@@ -1,25 +1,9 @@
 {
-  "current_session": "Practice 2",
+  "current_session": "Practice 3",
   "drivers": [
     {
       "name": "Unknown",
       "team": "McLaren",
-      "position": 1,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "Cadillac",
-      "position": 1,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "Alpine",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -36,6 +20,22 @@
     {
       "name": "Unknown",
       "team": "Audi",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
+      "team": "McLaren",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
+      "team": "McLaren",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
