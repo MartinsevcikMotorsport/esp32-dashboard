@@ -1,5 +1,5 @@
 {
-  "current_session": "Sprint",
+  "current_session": "Qualifying",
   "drivers": [
     {
       "name": "Unknown",
@@ -11,8 +11,16 @@
     },
     {
       "name": "Unknown",
-      "team": "McLaren",
-      "position": 2,
+      "team": "Audi",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
+      "team": "Racing Bulls",
+      "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
@@ -20,7 +28,7 @@
     {
       "name": "Unknown",
       "team": "Ferrari",
-      "position": 2,
+      "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
@@ -28,15 +36,7 @@
     {
       "name": "Unknown",
       "team": "Ferrari",
-      "position": 3,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "McLaren",
-      "position": 3,
+      "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
