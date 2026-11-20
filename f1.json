@@ -1,5 +1,5 @@
 {
-  "current_session": "Practice 1",
+  "current_session": "Practice 2",
   "drivers": [
     {
       "name": "Unknown",
@@ -11,7 +11,7 @@
     },
     {
       "name": "Unknown",
-      "team": "Cadillac",
+      "team": "Racing Bulls",
       "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
@@ -19,8 +19,16 @@
     },
     {
       "name": "Unknown",
-      "team": "Red Bull Racing",
-      "position": 2,
+      "team": "McLaren",
+      "position": 1,
+      "fp1": "N/A",
+      "fp2": "N/A",
+      "qualifying": "N/A"
+    },
+    {
+      "name": "Unknown",
+      "team": "Ferrari",
+      "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
@@ -28,15 +36,7 @@
     {
       "name": "Unknown",
       "team": "McLaren",
-      "position": 2,
-      "fp1": "N/A",
-      "fp2": "N/A",
-      "qualifying": "N/A"
-    },
-    {
-      "name": "Unknown",
-      "team": "Haas F1 Team",
-      "position": 2,
+      "position": 1,
       "fp1": "N/A",
       "fp2": "N/A",
       "qualifying": "N/A"
